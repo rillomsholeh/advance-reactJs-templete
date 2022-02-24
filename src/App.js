@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
+import DetailUser from "./pages/DetailUser";
 // import component here
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/signin" element={<SignIn />} />
         {/* define new route */}
+        <Route exact path="/users/:id" element={<DetailUser />} />
       </Routes>
     </Router>
   );
